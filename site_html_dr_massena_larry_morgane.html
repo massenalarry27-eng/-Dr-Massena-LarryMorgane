@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr Massena Larry Morgane | Gynécologue Obstétricien</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      background:#f4f8fc;
+      color:#1c2b39;
+      line-height:1.6;
+    }
+
+    header{
+      background:linear-gradient(135deg,#0d6efd,#003c7a);
+      color:white;
+      padding:20px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:sticky;
+      top:0;
+      z-index:1000;
+      box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .logo{
+      font-size:24px;
+      font-weight:700;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:25px;
+      font-weight:500;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      opacity:0.7;
+    }
+
+    .hero{
+      min-height:90vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:50px 8%;
+      background:linear-gradient(rgba(0,52,110,0.8),rgba(0,52,110,0.8)),url('https://images.unsplash.com/photo-1584515933487-779824d29309?q=80&w=1400&auto=format&fit=crop') center/cover;
+      color:white;
+    }
+
+    .hero-content h1{
+      font-size:55px;
+      margin-bottom:15px;
+    }
+
+    .hero-content p{
+      font-size:20px;
+      max-width:800px;
+      margin:auto;
+      margin-bottom:35px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:15px 30px;
+      border-radius:50px;
+      text-decoration:none;
+      font-weight:600;
+      margin:10px;
+      transition:0.3s;
+    }
+
+    .btn-primary{
+      background:white;
+      color:#0d6efd;
+    }
+
+    .btn-primary:hover{
+      background:#dce9ff;
+    }
+
+    .btn-whatsapp{
+      background:#25d366;
+      color:white;
+    }
+
+    section{
+      padding:80px 8%;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:50px;
+    }
+
+    .section-title h2{
+      font-size:38px;
+      color:#003c7a;
+      margin-bottom:10px;
+    }
+
+    .about{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:50px;
+      align-items:center;
+    }
+
+    .about img{
+      width:100%;
+      border-radius:20px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.15);
+    }
+
+    .services{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .service-card{
+      background:white;
+      padding:30px;
+      border-radius:20px;
+      text-align:center;
+      box-shadow:0 5px 20px rgba(0,0,0,0.08);
+      transition:0.3s;
+    }
+
+    .service-card:hover{
+      transform:translateY(-8px);
+    }
+
+    .service-card h3{
+      color:#0d6efd;
+      margin-bottom:15px;
+    }
+
+    .locations{
+      background:#eaf2ff;
+    }
+
+    .location-list{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .location-card{
+      background:white;
+      padding:25px;
+      border-radius:20px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    }
+
+    .contact{
+      text-align:center;
+    }
+
+    .contact p{
+      font-size:20px;
+      margin:10px 0;
+    }
+
+    footer{
+      background:#003c7a;
+      color:white;
+      text-align:center;
+      padding:25px;
+    }
+
+    .whatsapp-float{
+      position:fixed;
+      width:65px;
+      height:65px;
+      bottom:25px;
+      right:25px;
+      background:#25d366;
+      color:white;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:30px;
+      text-decoration:none;
+      box-shadow:0 4px 15px rgba(0,0,0,0.3);
+      z-index:1000;
+    }
+
+    @media(max-width:900px){
+      .hero-content h1{
+        font-size:38px;
+      }
+
+      .about{
+        grid-template-columns:1fr;
+      }
+
+      nav{
+        display:none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Dr Massena Larry Morgane</div>
+
+  <nav>
+    <a href="#about">À propos</a>
+    <a href="#services">Services</a>
+    <a href="#locations">Consultations</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Dr Massena Larry Morgane</h1>
+    <p>
+      Gynécologue – Obstétricien<br>
+      Consultation spécialisée, suivi prénatal, échographie obstétricale,
+      grossesse à risque et chirurgie gynécologique.
+    </p>
+
+    <a href="https://wa.me/50943741070" class="btn btn-whatsapp">WhatsApp</a>
+    <a href="#contact" class="btn btn-primary">Prendre Rendez-vous</a>
+  </div>
+</section>
+
+<section id="about">
+  <div class="section-title">
+    <h2>À propos</h2>
+  </div>
+
+  <div class="about">
+    <img src="https://images.unsplash.com/photo-1612277795421-9bc7706a4a41?q=80&w=1200&auto=format&fit=crop" alt="Doctor">
+
+    <div>
+      <h2>Votre santé féminine entre de bonnes mains</h2>
+      <br>
+      <p>
+        Dr Massena Larry Morgane est Médecin Gynécologue-Obstétricien offrant une prise en charge moderne, professionnelle et humaine.
+      </p>
+      <br>
+      <p>
+        Il assure le suivi des grossesses normales et à risque, les soins gynécologiques spécialisés,
+        les urgences gynécologiques ainsi que la chirurgie gynécologique.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="section-title">
+    <h2>Services Médicaux</h2>
+  </div>
+
+  <div class="services">
+
+    <div class="service-card">
+      <h3>Consultation Gynécologique</h3>
+      <p>Évaluation et suivi gynécologique complet.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>Suivi Prénatal</h3>
+      <p>Accompagnement personnalisé de la grossesse.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>Grossesse à Risque</h3>
+      <p>Prise en charge spécialisée des grossesses compliquées.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>Échographie Obstétricale</h3>
+      <p>Suivi échographique moderne et sécurisé.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>Accouchement & Césarienne</h3>
+      <p>Prise en charge obstétricale complète.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>Infertilité</h3>
+      <p>Évaluation et accompagnement des couples.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>Colposcopie – Biopsie</h3>
+      <p>Dépistage et traitement des lésions cervicales.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>Planification Familiale</h3>
+      <p>Conseils et méthodes contraceptives adaptées.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="locations" id="locations">
+  <div class="section-title">
+    <h2>Centres de Consultation</h2>
+  </div>
+
+  <div class="location-list">
+
+    <div class="location-card">
+      <h3>OMNI Hospital – GYNEO</h3>
+      <p>Pétion-Ville</p>
+    </div>
+
+    <div class="location-card">
+      <h3>CHPP</h3>
+      <p>Pétion-Ville</p>
+    </div>
+
+    <div class="location-card">
+      <h3>CGOH – Hôpital Ste Cène</h3>
+      <p>Route de Frères</p>
+    </div>
+
+    <div class="location-card">
+      <h3>Oviplex</h3>
+      <p>Delmas 75</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="section-title">
+    <h2>Contact</h2>
+  </div>
+
+  <p><strong>Téléphone :</strong> 4428 9666</p>
+  <p><strong>WhatsApp :</strong> 4374 1070</p>
+  <br>
+
+  <a href="https://wa.me/50943741070" class="btn btn-whatsapp">Contacter sur WhatsApp</a>
+</section>
+
+<footer>
+  <p>© 2026 Dr Massena Larry Morgane | Gynécologue – Obstétricien</p>
+</footer>
+
+<a href="https://wa.me/50943741070" class="whatsapp-float">✆</a>
+
+</body>
+</html>
